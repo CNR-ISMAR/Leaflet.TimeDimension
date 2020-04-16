@@ -85,6 +85,7 @@ L.TimeDimension.Layer.WMS.TimeSeries = L.TimeDimension.Layer.WMS.extend({
         }
         var color = this._getNextMarkerColor();
         var circle = L.circleMarker([point.position[0], point.position[1]], {
+            pane: 'markerPane',
             color: '#FFFFFF',
             fillColor: color,
             fillOpacity: 0.8,
